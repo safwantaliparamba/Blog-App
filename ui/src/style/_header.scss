@@ -1,0 +1,100 @@
+// #header
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 5;
+    padding: 25px 100px;
+    width: 100%;
+    box-shadow: 2px 6px 22px -1px #a3a0a0bf;
+
+    h1 {
+        a {
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+    form {
+        border: 1px solid #111;
+        padding: 10px 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+
+        input[type="search"] {
+            font-size: 19px;
+        }
+        button[type="submit"] {
+            width: 20px;
+            
+            img.wrap {
+                cursor: pointer;
+            }
+        }
+    }
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                margin-right: 25px;
+
+                a {
+                    font-weight: 600;
+                }
+                a.cart {
+                    background: #9e5ef3;
+                    display: flex;
+                    align-items: center;
+                    padding: 7px 35px;
+                    border-radius: 10px;
+                    position: relative;
+
+                    img {
+                        width: 25px;
+                    }
+                    span {
+                        position: absolute;
+                        top: -13px;
+                        left: 63px;
+                        font-weight: 700;
+                        padding: 7px 12px;
+                        border-radius: 10px;
+                        color: #fff;
+                        background-color: #111;
+                    }
+                }
+                // a.profile {}
+                &:last-child {
+                    margin-right: 0;
+                }
+                .logout {
+                    font-weight: 600;
+                    padding: 11px 20px;
+                    background: #ff2626;
+                    border-radius: 10px;
+                    color: #fff;
+                    margin-left: 16px;
+                    cursor: pointer;
+                }
+                a.auth {
+                    padding: 10px 25px;
+                    border-radius: 10px;
+                    background: #ddc4ff;
+                }
+                a.login {
+                    color: #9e5ef3;
+                }
+                a.register {
+                    color: #ff02bb;
+                    background: #ffade9;
+                }
+            }
+        }
+    }
+}

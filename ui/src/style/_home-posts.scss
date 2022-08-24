@@ -1,0 +1,115 @@
+#post-and-sort {
+    display: flex;
+    flex-wrap: wrap;
+    #posts {
+        width: 80%;
+        & > h1 {
+            @include title;
+            font-size: 32px;
+            padding: 32px 0 50px;
+        }
+        .head{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 40px;
+
+            form {
+                border: 1px solid #111;
+                padding: 10px 40px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                width: max-content;
+        
+                input[type="search"] {
+                    font-size: 19px;
+                }
+                button[type="submit"] {
+                    width: 20px;
+                    
+                    img.wrap {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        ul.posts {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 32px;
+            gap: 2em;
+            li {
+                width: 30%;
+                display: inline-block;
+                border: 1px solid #494949;
+                border-radius: 5px;
+                padding: 25px;
+                & > a {
+                    
+                    h5 {
+                        font-weight: 600;
+                        font-size: 23px;
+                        margin: 10px 0;
+                    }
+                }
+                .head{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;padding-bottom: 10px;
+                    h5 {
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: #250068;
+                    }
+                    span.delete{
+                        color: #d80000;
+                        cursor: pointer;
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .filter {
+        margin: 200px 0;
+        width: 20%;
+        height: max-content;
+        background-color: #fff;
+        padding: 25px ;
+        box-shadow: 2px 6px 22px -1px #a3a0a0bf;
+        h1 {
+            @include title;
+            font-size: 22px;
+            margin-bottom: 32px;
+        }
+        form{
+            .input-container {
+                margin-bottom: 17px;
+
+                input[type="radio"]{
+                    display: inline-block;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    color: #250068;
+                }
+                label{
+                    font-size: 16px;
+                    cursor: pointer;
+                    color: #007920;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

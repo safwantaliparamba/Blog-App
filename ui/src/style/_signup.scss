@@ -1,0 +1,90 @@
+#signup{
+    
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        height: calc(100vh-94px);
+
+        .left{
+            width: 50%;
+            height: 100vh;
+
+            img.wrap{
+                width: 90%;
+                display: block;
+                margin: auto;
+            }
+        }
+        .right{
+            background: #e3e3e338;
+            border-radius: 15px;
+            width: 50%;
+            padding: 100px 0 50px;
+
+            h1{
+                font-size: 36px;
+                font-weight: 600;
+                text-align: center;
+                color: #25044d;
+                margin-bottom: 60px;
+            }
+
+            form{
+                width: 100%;
+                .input-wrapper{
+                    margin: 30px 80px;
+
+                    label{
+                        width: 100%;
+                        font-weight: 600;
+                        display: inline-block;
+                        margin-bottom: 10px;
+                    }
+                    input{
+                        width: 100%;
+                        border: 1px solid #7b6b91;
+                        border-radius: 10px;
+                        font-size: 19px;
+                        font-weight: 600;
+                        padding: 10px 20px;
+                    }
+                }
+                p.error{
+                    width: 80%;
+                    margin: 0 auto;
+                    border: 2px solid #ff4444;
+                    color: #ff4444;
+                    padding: 10px 30px;
+                    border-radius: 10px;
+                }
+                button[type="submit"]{
+                    text-align: center;
+                    display: block;
+                    width: 90%;
+                    font-size: 20px;
+                    font-weight: 600;
+                    background-color:#ddc4ff;
+                    color: #9e5ef3;
+                    padding: 15px;
+                    margin:0 auto;
+                    border-radius: 25px;
+                    margin-top: 50px;
+                    cursor: pointer;
+                }
+            }
+            p{
+                font-weight: 600;
+                text-align: center;
+                margin-top: 24px;
+
+                a{
+                    font-weight: inherit;
+                    text-decoration: underline;
+                    margin-right: 8px;
+                    color: #9e5ef3;;
+                }
+            }
+        }
+    }
+}
